@@ -1,0 +1,9 @@
+# create_md.sh is a template to modify the protocol for the relaxation. 
+# PRODUCTION SHOULD NOT BE CHANGED WRT THE REFERENCE TEMPLATE. 
+
+# each md run MUST have a create_md.sh to identify how it was created for reproducibility purposes. 
+
+
+# usage 
+bash create_md.sh -c hLOX15_5-HETE_132_10_mod_norelaxed_4amber_solv.inpcrd -l 250 -p hLOX15_5-HETE_132_10_mod_norelaxed_4amber_solv.prmtop -r 665
+

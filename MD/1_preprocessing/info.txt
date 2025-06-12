@@ -1,0 +1,8 @@
+# once a feasible pose has been obtained for the ligand and the complex has been obtained, the file is preprocessed using a custom script 'preprocess.sh' to make it reproducible. 
+
+# the resulting preprocessed pdb can then be used alongside the ligand .frcmod and coordination sphere .frcmod to generate the dry and solvated pdb ready for relaxation using a tleap.in script. 
+
+# usage
+# bash preprocess.sh -i 5-HETE/hLOX15_5-HETE_132_10_mod_norelaxed/hLOX15_5-HETE_132_10_mod_norelaxed.pdb -n HETE
+
+# 

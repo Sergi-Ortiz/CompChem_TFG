@@ -1,0 +1,35 @@
+# Precatalytic structure computation from MD trajectory
+# Sergi Ortiz @ UAB
+# hLOX15 protein
+# Reaction coordinate r = r_C10-H10 - r_H10-O
+# \Delta E (kcal/mol) refers to the precatalytic structure formation probability contirbution to \Delta E^\ddag,
+# this contibution depends heavily on how a \'precatalytic\' structure is defined (distance and dihedral filters)!
+# Energy contribution in kcal/mol
+
+# Three definitions of precatalytic structures:
+# A1. Criterium 1: Distance  H10 < 3.0 A
+# A2. Criterium 2: Planarity C10 = 180 +- 180.0 deg
+# B. N_spaced equispaced frames, with the criterion r > -5.0.
+# C1. N_spaced equispaced frames. Criterium 1: RC r > -5.0
+# C2. N_spaced equispaced frames. Criterium 2: Planarity C10 = 180 +- 180.0 deg
+
+
+MD run info
+Ligand    Docking   Radius    Type      Receptor       A1 (%)    A2 (%)    A_N     A_n     Precat (%)  A \Delta E  B_N     B_n     B \Delta E  C_N     C_n     C \Delta E
+5-HETE    13        12        mod       norelaxed      18.60     100.00    25000   4649    18.60       1.0         2500    2495    0.0         2500    2495    0.0
+5-HpETE   41        10        mod       norelaxed      64.87     108.00    25000   16217   64.87       0.3         2700    2700    -0.0        2700    2700    -0.0
+5-HpETE   369       12        nomod     norelaxed      0.12      100.00    25000   30      0.12        4.0         2500    2257    0.1         2500    2257    0.1
+5-HETE    132       10        mod       norelaxed      0.00      100.00    25000   0       0.00        inf         2500    1026    0.5         2500    1026    0.5
+5-HETE    185       12        mod       norelaxed      16.41     100.00    25000   4103    16.41       1.1         2500    2491    0.0         2500    2491    0.0
+5-HETE    343       12        mod       norelaxed      34.52     100.00    50000   17261   34.52       0.6         2500    2470    0.0         2500    2470    0.0
+5-HpETE   41        10        mod       norelaxed      0.75      100.00    25000   187     0.75        2.9         2500    2413    0.0         2500    2413    0.0
+5-HpETE   369       12        nomod     norelaxed      0.00      100.00    25000   1       0.00        6.0         2500    2411    0.0         2500    2411    0.0
+5-HpETE   391       12        mod       norelaxed      72.84     100.00    25000   18211   72.84       0.2         2500    2500    -0.0        2500    2500    -0.0
+AA        12        10        nomod     norelaxed      7.66      100.00    25000   1916    7.66        1.5         2500    2418    0.0         2500    2418    0.0
+AA        54        12        mod       norelaxed      5.45      100.00    50000   2724    5.45        1.7         2500    2218    0.1         2500    2218    0.1
+AA        63        10        mod       norelaxed      16.43     100.00    25000   4107    16.43       1.1         2500    2488    0.0         2500    2488    0.0
+AA        204       12        mod       norelaxed      38.06     100.00    25000   9514    38.06       0.6         2500    2479    0.0         2500    2479    0.0
+AA        405       12        nomod     norelaxed      14.40     100.00    25000   3599    14.40       1.2         2500    2495    0.0         2500    2495    0.0
+5-HpETE   19        10        mod       norelaxed      0.00      100.00    25000   0       0.00        inf         2500    712     0.7         2500    712     0.7
+5-HETE    167       12        nomod     norelaxed      22.27     100.00    25000   5567    22.27       0.9         2500    2500    -0.0        2500    2500    -0.0
+5-HETE    284       12        nomod     norelaxed      24.31     100.00    25000   6078    24.31       0.8         2500    2498    0.0         2500    2498    0.0

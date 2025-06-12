@@ -1,0 +1,10 @@
+# use 
+
+# AA
+# bash ../preprocess.sh -i h15LOX_AA_<pose>.pdb -n AA
+
+# 5-HETE
+# bash ../preprocess.sh -i h15LOX_5-HETE_<pose>.pdb -n HETE
+
+# 5-HpETE
+# bash ../preprocess.sh -i h15LOX_5-HpETE_<pose>.pdb -n HpETE

@@ -1,0 +1,9 @@
+total 6308
+-rw-r--r-- 1 sortiz MolBioMed       0 Apr 10 22:45 23559_opt_qmmm.53823.err
+-rw-r--r-- 1 sortiz MolBioMed      32 Apr 10 22:45 23559_opt_qmmm.53823.log
+-rwx------ 1 sortiz MolBioMed   11000 Apr 10 22:45 23559_solv.act_list
+-rwx------ 1 sortiz MolBioMed  451235 Apr 10 22:45 23559_solv_cropped.inpcrd
+-rwx------ 1 sortiz MolBioMed 1001403 Apr 10 22:45 23559_solv_cropped.pdb
+-rwx------ 1 sortiz MolBioMed 4976512 Apr 10 22:45 23559_solv_cropped_mod.prmtop
+-rwx------ 1 sortiz MolBioMed    2489 Apr 10 22:45 opt.chm
+-rwx------ 1 sortiz MolBioMed     441 Apr 10 22:45 qm_list

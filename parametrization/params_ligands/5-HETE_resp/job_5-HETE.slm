@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -J 5-HETE_resp
+#SBATCH -e /home/sortiz/5-HETE_resp/5-HETE_resp.%j.err
+#SBATCH -o /home/sortiz/5-HETE_resp/5-HETE_resp.%j.out
+#SBATCH -p normal
+#SBATCH -n 1
+#SBATCH -c 16
+#SBATCH -t 2-02:00
+
+# script generated automatically by resp_job_gen.sh
+# Amber RESP charge parametrization
+# Gaussian HF/6-31(d) job 
+
+# gaussian settings
+ml Gaussian/16.C.02-AVX2
+#ml Gaussian/16.B.01-LEGACY 
+
+export GAUSS_SCRDIR=$SLURM_SUBMIT_DIR
+printf "gaussian dir:\t$GAUSS_SCRDIR\n"
+
+#  Modify the input and output files!
+INPUT_FILES=5-HETE_resp.com      
+OUTPUT_FILES=5-HETE_resp.log
+
+printf "Started: `date`\n"
+
+cp $INPUT_FILES $TMP_DIR
+cd $TMP_DIR
+
+srun g16 < $SLURM_SUBMIT_DIR/$INPUT_FILES > $SLURM_SUBMIT_DIR/$OUTPUT_FILES
+
+printf "\n\n`ls -l`\n\n"
+mv *  $SLURM_SUBMIT_DIR/
+
+printf "Finished: `date`\n"

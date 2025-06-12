@@ -1,0 +1,10 @@
+# protein info
+
+# human15LOX 
+# obtained through AF2 and protonated by persona universitat de Madrid.
+# s'hauria de comprovar que els tritable residues són realment correctes wrt H++.
+
+# human15LOX_mod
+# same as human15LOX but with a rotamer of Arg402 to better match the ligand carboxylate. This modification has been done by hand using chemical intuition.
+
+# both have been used in docking simulations, but have NOT been modified by GOLD. It has been saved by Chimera so that GOLD understands it.

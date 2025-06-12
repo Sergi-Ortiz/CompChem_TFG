@@ -1,0 +1,3 @@
+# two poses have been used, 54, 358. Explicit in its naming
+
+# the AA.mol2 HAS BEEN MODIFIED, to account for the same naming convention as in the PDB. this is because the AA.mol2 I personally generated through resp had different naming wrt ACD.mol2 (Alejandro), which used H13A, etc. vs H16 or whatever.

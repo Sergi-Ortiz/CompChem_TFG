@@ -1,0 +1,1 @@
+# h15LOX.pdb is /Users/sergiortizropero/TFG_chem/3_MD/0_preprocessing/h15LOX/human15LOX_chimera.pdb, the protein from AF2 protonated I was given when the TFG started. 
